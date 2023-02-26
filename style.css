@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    list-style: none;
+    color: #FFFFFF;
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+button {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+body {
+    background-color: #050505;
+    margin: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 124.6rem;
+    margin: 0 auto;
+    padding: 0rem 1.5rem;
+}
+
+.nav-tabs{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+
+.tab-content h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.nav-tabs li a{
+    color: white;
+    display: inline-block;
+    font-size: 2rem;
+    padding: 10px 20px;
+    background-color: black;
+    border: solid 2px white;
+    border-radius: 0.5rem;
+    transition: all .5s ease;
+}
+
+.nav-tabs li a.active,
+.nav-tabs li a:hover{
+    color: #050505;
+    background-color: white;
+}
+
+.tab-content{
+    border: solid 2px white;
+    border-radius: 2rem;
+    padding: 2rem;
+    max-width: 50%;
+}
+
+.tab-content .tab-pane.active{
+    display: block;
+    animation: fadeIn .5s forwards;
+}
+
+.tab-content .tab-pane{
+    display: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
